@@ -63,3 +63,18 @@ article p {
     text-decoration: none;
     color: var(--color-text-default);
 }
+
+
+
+
+/*! home page */
+
+.recipe-list {
+    list-style: none;
+    padding: var(--spacing-0);
+}
+
+.recipe-item {
+
+    border-bottom: 1px solid var(--color-border-default);
+}
