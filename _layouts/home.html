@@ -23,32 +23,14 @@ layout: base
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
+
+    <!-- display a list of posts -->
     <ul class="recipe-list">
-      {%- assign date_format = "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li class="recipe-item">
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-            {{ post.category | escape }}
-          </a>
-          {% for tag in post.tags %}
-            <a href="/tags/{{ tag }}/" data-toggle="tooltip" data-original-title="{{ tag | capitalize }}">
-              {% include {{ tag | prepend: 'icons/' | append: '.svg' }} %}
-            </a>
-
-          {% endfor %}
-
-          
-
-
-
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+        {%- include recipe-list-item.html -%}
       {%- endfor -%}
     </ul>
+    <!-- end post list -->
 
     {% if site.paginate %}
       <div class="pager">

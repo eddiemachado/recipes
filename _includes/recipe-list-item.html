@@ -1,0 +1,14 @@
+<li class="recipe-item">
+    <!-- post title -->
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    <div class="recipe-meta">
+      <!-- tags -->
+      {% for tag in post.tags %}
+        <a href="/tags/{{ tag }}/" data-tooltip="{{ tag | capitalize }}">
+          {% include {{ tag | prepend: 'icons/' | append: '.svg' }} %}
+        </a>
+      {% endfor %}
+      <!-- category -->
+      <a href="" class="category category-{{ post.category }}">{{ post.category | capitalize }}</a>
+    </div>
+</li>

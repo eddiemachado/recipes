@@ -75,6 +75,8 @@ article p {
 }
 
 .recipe-item {
-
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-16) var(--spacing-16);
     border-bottom: 1px solid var(--color-border-default);
 }
