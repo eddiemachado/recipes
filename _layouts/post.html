@@ -13,6 +13,8 @@ layout: base
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
 
+  {%- include segment-control.html -%}
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
@@ -39,15 +41,15 @@ layout: base
 
   <div class="aside-block">
       <a href="#" class="aside-bubble">
-          <h4>Widget title</h4>
+          <h4>The Holy Trinity</h4>
           <p>This is a small description</p>
       </a>
       <a href="#" class="aside-bubble">
-          <h4>Widget title</h4>
+          <h4>Guide to Garlic</h4>
           <p>This is a small description</p>
       </a>
       <a href="#" class="aside-bubble">
-          <h4>Widget title</h4>
+          <h4>Guide to Onions</h4>
           <p>This is a small description</p>
       </a>
   </div>

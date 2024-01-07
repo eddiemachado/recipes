@@ -58,6 +58,10 @@ article p {
     transition: var(--motion-speed-02) var(--motion-standard);
 }
 
+.aside-bubble p {
+    color: var(--color-text-light);
+}
+
 .aside-bubble:hover {
     border-color: var(--color-border-default-hover);
     text-decoration: none;
