@@ -1,7 +1,7 @@
 ---
-layout: post
-title:  "Sazon"
-category: foundations
+layout: recipe
+title:  "Arroz on Pollo"
+category: dinner
 tags: spicy chicken
 ---
 

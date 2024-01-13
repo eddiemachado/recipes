@@ -20,7 +20,7 @@ layout: base
   </div>
 
   <h4>Keywords</h4>
-  {% for item in post.keywords %}
+  {% for item in page.keywords %}
         <a class="keyword" href="#" data-tooltip="{{ item | capitalize }}">
           {{ item | prepend: '#' }}
         </a>
@@ -57,8 +57,8 @@ layout: base
   <div class="aside-block recipe-related">
       <h4>Widget title</h4>
       <ul>
-        {% for item in site.posts | where_exp: "post","post.tags contains 'foundation'" %}
-          <p>foundation</p>
+        {% for item in site.posts | where_exp: "post","post.tags contains 'mytag'" %}
+
         {% endfor %}
           <li><a href="#">Related recipe #1</a></li>
           <li><a href="#">Related recipe #2</a></li>

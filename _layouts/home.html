@@ -24,9 +24,16 @@ layout: base
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
 
+    <ul class="page-list">
+      {%- for post in posts -%}
+        <p>hi</p>
+      {%- endfor -%}
+    </ul>
+
     <!-- display a list of posts -->
     <ul class="recipe-list">
-      {%- for post in posts -%}
+      {% for recipe in collection.recipe %}
+        <p>recipe</p>
         {%- include recipe-list-item.html -%}
       {%- endfor -%}
     </ul>

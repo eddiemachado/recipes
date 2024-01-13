@@ -1,0 +1,5 @@
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:name/
+    layout: "recipe"
