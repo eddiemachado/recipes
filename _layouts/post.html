@@ -13,8 +13,6 @@ layout: base
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
 
-  {%- include segment-control.html -%}
-
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
@@ -32,43 +30,7 @@ layout: base
 <!-- end article -->
 
 
-<!-- end aside -->
-<aside>
-  <div class="aside-block recipe-info">
-      <h4>Widget title</h4>
-      <p>This is the key information used within this recipe and can show some helpful information like prepping or something?</p>
-  </div>
 
-  <div class="aside-block">
-      <a href="#" class="aside-bubble">
-          <h4>The Holy Trinity</h4>
-          <p>This is a small description</p>
-      </a>
-      <a href="#" class="aside-bubble">
-          <h4>Guide to Garlic</h4>
-          <p>This is a small description</p>
-      </a>
-      <a href="#" class="aside-bubble">
-          <h4>Guide to Onions</h4>
-          <p>This is a small description</p>
-      </a>
-  </div>
-
-  <div class="aside-block recipe-related">
-      <h4>Widget title</h4>
-      <ul>
-        {% for item in site.posts | where_exp: "post","post.tags contains 'foundation'" %}
-          <p>foundation</p>
-        {% endfor %}
-          <li><a href="#">Related recipe #1</a></li>
-          <li><a href="#">Related recipe #2</a></li>
-          <li><a href="#">Related recipe #3</a></li>
-          <li><a href="#">Related recipe #4</a></li>
-      </ul>
-  </div>
-
-
-</aside>
 
 </div>
 

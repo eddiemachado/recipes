@@ -3,17 +3,42 @@ layout: base
 ---
 
 
-
-<div class="recipe-container">
-
  <!-- article --> 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <div class="breadcrumbs">
+      <a href="/" class="">Home</a>
+      <span>/</span>
+      <a href="/{{ page.category }}" class="">{{ page.category | capitalize }}</a>
+    </div>
+    
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+
+    <div class="recipe-meta">
+      <div class="prep-time">
+        <label>Prep time</label>
+        <span>{{ page.preptime }}</span>
+      </div>
+
+      <div class="cooking-time">
+        <label>Cooking time</label>
+        <span>{{ page.cooktime }}</span>
+      </div>
+
+      <div class="servings">
+        <label>Servings</label>
+        <span>{{ page.servings }}</span>
+      </div>
+    </div>
+
+
   </header>
 
-  {%- include segment-control.html -%}
+  {% if page.vegetarian != nil %}
+    {%- include segment-control.html -%}
+  {% endif %}
+  
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
@@ -32,43 +57,4 @@ layout: base
 <!-- end article -->
 
 
-<!-- end aside -->
-<aside>
-  <div class="aside-block recipe-info">
-      <h4>Widget title</h4>
-      <p>This is the key information used within this recipe and can show some helpful information like prepping or something?</p>
-  </div>
-
-  <div class="aside-block">
-      <a href="#" class="aside-bubble">
-          <h4>The Holy Trinity</h4>
-          <p>This is a small description</p>
-      </a>
-      <a href="#" class="aside-bubble">
-          <h4>Guide to Garlic</h4>
-          <p>This is a small description</p>
-      </a>
-      <a href="#" class="aside-bubble">
-          <h4>Guide to Onions</h4>
-          <p>This is a small description</p>
-      </a>
-  </div>
-
-  <div class="aside-block recipe-related">
-      <h4>Widget title</h4>
-      <ul>
-        {% for item in site.posts | where_exp: "post","post.tags contains 'mytag'" %}
-
-        {% endfor %}
-          <li><a href="#">Related recipe #1</a></li>
-          <li><a href="#">Related recipe #2</a></li>
-          <li><a href="#">Related recipe #3</a></li>
-          <li><a href="#">Related recipe #4</a></li>
-      </ul>
-  </div>
-
-
-</aside>
-
-</div>
 

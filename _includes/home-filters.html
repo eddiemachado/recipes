@@ -1,0 +1,13 @@
+<div class="filters home-filters">
+
+    <input type="search" class="input input-search" placeholder="Type to filter..." />
+
+    <select name="sort" class="select" id="category">
+        {% assign categories = site.categories | sort %}
+            {% for category in categories %}
+            {% assign cat = category | first %}
+            <option value="{{ cat }}">{{ cat | capitalize }}</option>
+        {% endfor %}
+    </select>
+
+</div>

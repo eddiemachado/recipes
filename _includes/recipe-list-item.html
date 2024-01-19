@@ -1,14 +1,18 @@
 <li class="recipe-item">
-    <!-- post title -->
-    <a class="post-link" href="{{ post.url | relative_url }}">{{ recipe.title | escape }}</a>
-    <div class="recipe-meta">
-      <!-- tags -->
-      {% for tag in recipe.tags %}
-        <a href="/tags/{{ tag }}/" data-tooltip="{{ tag | capitalize }}">
-          {% include {{ tag | prepend: 'icons/' | append: '.svg' }} %}
-        </a>
-      {% endfor %}
-      <!-- category -->
-      <a href="" class="category category-{{ recipe.category }}">{{ recipe.category | capitalize }}</a>
-    </div>
+  <a class="post-link" href="{{ post.url | relative_url }}">
+      <!-- post title -->
+      <h4 class="recipe-item-title">{{ post.title | escape }}</h4>
+      <p class="recipe-item-desc">{{ post.description | escape }}</p>
+  </a>
+
+  <div class="recipe-list-meta">
+    <!-- tags -->
+    {% for tag in post.tags %}
+      <a href="/tags/{{ tag }}/" data-tooltip="{{ tag | capitalize }}" class="recipe-icon icon-{{ tag }}">
+        {% include {{ tag | prepend: 'icons/' | append: '.svg' }} %}
+      </a>
+    {% endfor %}
+    <!-- category -->
+    <a href="" class="category category-{{ post.category }}">{{ post.category | capitalize }}</a>
+  </div>
 </li>

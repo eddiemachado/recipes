@@ -1,8 +1,9 @@
 ---
 layout: recipe
 title: Arroz con Pollo
-description: description
+description: This is a short description
 category: dinner
+vegetarian: true
 ingredients:
   - 2 Tbsp Olive Oil
   - 2 lbs Lean Ground beef
@@ -29,7 +30,7 @@ instructions:
   - Reduce heat to low, cover and cook for 15 minutes, stirring occasionally.
   - Stir in uncooked macaroni noodles, cover and cook for an additional 15-25 minutes, or until pasta is cooked.
   - Serve and Enjoy!
-preptime: 10
-cooktime: 60
+preptime: 10min
+cooktime: 60min
 servings: 6
 ---

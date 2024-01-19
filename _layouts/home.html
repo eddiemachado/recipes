@@ -24,20 +24,46 @@ layout: base
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
 
+    {%- include home-filters.html -%}
+
+
+
+
+
+      <!-- basics -->
+      <h3>Basics</h3>
+      <div class="page-cards">
+        
+        {% for post in site.categories.basics %}
+            {%- include recipe-card-item.html -%}
+        {% endfor %}
+      
+      </div>
+
+
+    <!-- foundations -->
+
+    <h3>Foundations</h3>
     <ul class="page-list">
-      {%- for post in posts -%}
-        <p>hi</p>
-      {%- endfor -%}
+        
+      {% for post in site.categories.foundations %}
+          {%- include recipe-list-item.html -%}
+      {% endfor %}
+    
     </ul>
 
-    <!-- display a list of posts -->
-    <ul class="recipe-list">
-      {% for recipe in collection.recipe %}
-        <p>recipe</p>
-        {%- include recipe-list-item.html -%}
-      {%- endfor -%}
+    <!-- dinner -->
+
+
+    <h3>Dinner</h3>
+    <ul class="page-list">
+        
+      {% for post in site.categories.dinner %}
+          {%- include recipe-list-item.html -%}
+      {% endfor %}
+    
     </ul>
-    <!-- end post list -->
+
 
     {% if site.paginate %}
       <div class="pager">

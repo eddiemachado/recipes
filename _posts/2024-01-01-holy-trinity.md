@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "The Holy Trinity"
-category: foundations
+title: The Holy Trinity
+description: This is a short description
+category: basics
 tags: ingredient
 ---
 
