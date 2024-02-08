@@ -132,6 +132,11 @@ article p {
     display: inline-flex;
     align-items: center;
     alignment-baseline: middle;
+    text-decoration: none;
+}
+
+.recipe-icon:hover {
+    text-decoration: none;
 }
 
 
@@ -174,12 +179,12 @@ article p {
 }
 
 .recipe-card {
-    flex: 1 0 40%; /* explanation below */
+    flex: 1 0 45%;
     margin-left: var(--spacing-8);
     margin-bottom: var(--spacing-8);
+    height: 240px;
     background-color: var(--color-white);
     border: 1px solid var(--color-border-default);
-    border-radius: var(--radius-16);
     transition: var(--motion-speed-02) var(--motion-standard);
 }
 

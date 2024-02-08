@@ -1,3 +1,6 @@
+
+image_path: /assets/images/
+
 collections:
   recipes:
     output: true

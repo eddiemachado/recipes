@@ -1,5 +1,8 @@
 <div class="recipe-card">
   <a class="post-link" href="{{ post.url | relative_url }}">
+      <!-- post thumb -->
+      <img class="post-thumb" href="{{ post.thumbnail }}" alt="" />
+
       <!-- post title -->
       <h4 class="recipe-item-title">{{ post.title | escape }}</h4>
       <p class="recipe-item-desc">{{ post.description | escape }}</p>
