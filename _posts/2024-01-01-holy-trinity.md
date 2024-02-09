@@ -3,7 +3,8 @@ layout: post
 title: The Holy Trinity
 description: This is a short description
 category: basics
-tags: ingredient
+tags: garlic onion
+thumbnail: sofrito
 ---
 
 

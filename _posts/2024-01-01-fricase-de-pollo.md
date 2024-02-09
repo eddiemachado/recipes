@@ -3,7 +3,7 @@ layout: recipe
 title: Fricase de pollo
 description: This is a short description
 category: dinner
-vegetarian: true
+tags: chicken
 ingredients:
   - 2 Tbsp Olive Oil
   - 2 lbs Lean Ground beef

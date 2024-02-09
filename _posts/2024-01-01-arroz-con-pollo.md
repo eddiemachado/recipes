@@ -3,6 +3,7 @@ layout: recipe
 title: Arroz con Pollo
 description: This is a short description
 category: dinner
+tags: chicken rice
 vegetarian: true
 ingredients:
   - 2 Tbsp Olive Oil

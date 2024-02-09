@@ -3,6 +3,7 @@ layout: recipe
 title: Vaca frita
 description: This is a short description
 category: dinner
+tags: beef 
 ingredients:
   - 2 Tbsp Olive Oil
   - 2 lbs Lean Ground beef

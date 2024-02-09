@@ -1,18 +1,30 @@
-<li class="recipe-item">
+<li class="recipe-item-list">
   <a class="post-link" href="{{ post.url | relative_url }}">
-      <!-- post title -->
-      <h4 class="recipe-item-title">{{ post.title | escape }}</h4>
-      <p class="recipe-item-desc">{{ post.description | escape }}</p>
-  </a>
+      
+    <!-- post title -->
+    <div class="recipe-card-info">
+      <!-- post image -->
+      <div class="post-thumb">
+        <img class="post-thumb-img" src="{{ site.baseurl }}/assets/images/{{ post.thumbnail }}.png" alt="" />
+      </div>
+      <div class="recipe-card-meta">
+        <h3 class="recipe-item-title">{{ post.title | escape }}</h3>
+        <p class="recipe-item-desc">{{ post.description | escape }}</p>
+      </div>
+    </div>
 
-  <div class="recipe-list-meta">
-    <!-- tags -->
-    {% for tag in post.tags %}
-      <a href="/tags/{{ tag }}/" data-tooltip="{{ tag | capitalize }}" class="recipe-icon icon-{{ tag }}">
-        {% include {{ tag | prepend: 'icons/' | append: '.html' }} %}
-      </a>
-    {% endfor %}
-    <!-- category -->
-    <a href="" class="category category-{{ post.category }}">{{ post.category | capitalize }}</a>
-  </div>
+    <div class="recipe-item-info">
+      <!-- tags -->
+      {% for tag in post.tags %}
+        <span data-tooltip="{{ tag | capitalize }}" class="recipe-icon icon-{{ tag }}">
+          {% include {{ tag | prepend: 'icons/' | append: '.html' }} %}
+        </span>
+      {% endfor %}
+      <!-- vegetarian options -->
+      {% if post.vegetarian %}
+        <span data-tooltip="Vegetarian Options" class="recipe-icon recipe-vegetarian">🥬</a>
+      {% endif %}
+    </div>
+
+  </a>
 </li>

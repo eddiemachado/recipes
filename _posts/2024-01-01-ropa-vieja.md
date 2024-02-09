@@ -3,6 +3,7 @@ layout: recipe
 title: Ropa vieja
 description: This is a short description
 category: dinner
+tags: beef 
 vegetarian: true
 ingredients:
   - 2 Tbsp Olive Oil

@@ -3,7 +3,7 @@ layout: recipe
 title: Picadillo
 description: This is a short description
 category: dinner
-tags: veggie
+tags: beef
 vegetarian: true
 ingredients:
   - 2 Tbsp Olive Oil

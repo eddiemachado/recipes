@@ -2,7 +2,6 @@
 layout: base
 ---
 
-<h1>Home page</h1>
 
 <div class="home">
   {%- if page.title -%}
@@ -30,20 +29,20 @@ layout: base
 
 
 
-      <!-- basics -->
-      <h3>Basics</h3>
-      <div class="page-cards">
+    <!-- basics -->
+    <h3 class="h4 home-section-header"><span>Basics</span></h3>
+    <div class="page-cards">
         
-        {% for post in site.categories.basics %}
-            {%- include recipe-card-item.html -%}
-        {% endfor %}
+      {% for post in site.categories.basics %}
+          {%- include recipe-card-item.html -%}
+      {% endfor %}
       
-      </div>
+    </div>
 
 
     <!-- foundations -->
 
-    <h3>Foundations</h3>
+    <h3 class="h4 home-section-header"><span>Foundations</span></h3>
     <ul class="page-list">
         
       {% for post in site.categories.foundations %}
@@ -52,10 +51,18 @@ layout: base
     
     </ul>
 
+    <!-- breakfast -->
+    <h3 class="h4 home-section-header"><span>Breakfast</span></h3>
+    <ul class="page-list">
+        
+      {% for post in site.categories.breakfast %}
+          {%- include recipe-list-item.html -%}
+      {% endfor %}
+    
+    </ul>
+
     <!-- dinner -->
-
-
-    <h3>Dinner</h3>
+    <h3 class="h4 home-section-header"><span>Dinner</span></h3>
     <ul class="page-list">
         
       {% for post in site.categories.dinner %}

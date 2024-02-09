@@ -88,60 +88,138 @@ article p {
     padding: var(--spacing-0);
 }
 
-.recipe-item {
+
+
+/* list item */
+
+.recipe-item-list {
     position: relative;
     display: flex;
     background-color: var(--color-white);
-    border: 1px solid var(--color-border-default);
-    border-radius: var(--radius-16);
+    border: 2px solid var(--color-border-default);
+    margin-bottom: var(--spacing-16);
+    box-shadow: var(--layer-pop);
+    border-radius: var(--radius-8);
+    border: 2px solid transparent;
     transition: var(--motion-speed-02) var(--motion-standard);
 }
 
-.recipe-item:hover {border-color: var(--color-border-default-hover);}
+.recipe-item-list:hover {
+    box-shadow: var(--layer-hover);
+    border-color: var(--color-border-default-hover);
+}
 
 .post-link {
     text-decoration: none;
     flex: 1;
     padding: var(--spacing-16) var(--spacing-16);
+    position: relative;
 }
 
 .post-link:hover {
     text-decoration: none;
 }
 
-.post-link:hover .recipe-item-title { text-decoration: underline;}
-
 .recipe-item-title {
     color: var(--color-text-default);
 }
 
+/* recipe item desc */
+
 .recipe-item-desc {
     font-size: var(--font-size-small);
+    font-family: var(--font-sans);
     color: var(--color-text-light);
 }
 
-.recipe-list-meta {
+.recipe-item-card .recipe-item-desc { 
+    color: var(--color-text-light-inverse); 
+}
+
+
+/* recipe tags & emojis */
+
+
+.recipe-item-info {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     right: var(--spacing-16);
     top: var(--spacing-16);
+    align-items: end;
+    justify-content: end;
 }
+
+.recipe-item-card .recipe-item-info {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 80px;
+    padding: 260px var(--spacing-16) 0;
+}
+
+
+
+
+.recipe-item-list .post-thumb {
+    background-color: var(--color-tan-300);
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-8);
+    margin-right: var(--spacing-16);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.post-thumb-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.recipe-item-list .post-thumb-img {
+    width: 75px;
+    top: -16px;
+
+}
+
+
+
+/* recipe icons and emokis */
 
 .recipe-icon {
     width: var(--spacing-32);
     height: var(--spacing-32);
-    display: inline-flex;
-    align-items: center;
-    alignment-baseline: middle;
+    font-size: 20px;
+    line-height: var(--spacing-32);
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
+    background-color: var(--color-black);
+    border-radius: var(--radius-rounded);
+    margin-left: var(--spacing-8);
 }
 
 .recipe-icon:hover {
     text-decoration: none;
 }
 
+.recipe-item-list .recipe-icon {
+    background-color: #f1f5f9;
+}
 
 
+/* recipe meta */
+.recipe-card-info {
+    display: flex;
+}
 
+
+.recipe-card-meta {
+
+}
 
 
 
@@ -176,16 +254,55 @@ article p {
 .page-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.recipe-card {
-    flex: 1 0 45%;
+.recipe-item-card {
+    flex: 1;
+    flex-basis: 25%;
     margin-left: var(--spacing-8);
     margin-bottom: var(--spacing-8);
-    height: 240px;
     background-color: var(--color-white);
-    border: 1px solid var(--color-border-default);
     transition: var(--motion-speed-02) var(--motion-standard);
+    overflow: hidden;
+    box-shadow: var(--layer-pop);
+    border-radius: var(--radius-8);
+    border: 2px solid transparent;
 }
 
-.recipe-card:first-of-type, .recipe-card:nth-of-type(3n) {margin-left: 0;}
+.recipe-item-card:hover {
+    box-shadow: var(--layer-hover);
+    border-color: var(--color-border-default-hover);
+}
+
+.recipe-item-card:first-of-type, .recipe-item-card:nth-of-type(4n) {margin-left: 0;}
+
+
+
+.recipe-item-card .post-link {
+    display: block;
+    height: 340px;
+    width: 100%;
+    padding: var(--spacing-0);
+}
+
+
+
+.recipe-card-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(30,41,59,1) 0%, rgba(30,41,59,0.686734068627451) 26%, rgba(30,41,59,0.2357536764705882) 50%, rgba(30,41,59,0.16292454481792717) 78%, rgba(30,41,59,0.7147452731092436) 100%);
+}
+
+.recipe-item-card .recipe-item-title { 
+    color: var(--color-text-default-inverse); 
+    font-family: var(--font-serif);
+    margin: var(--spacing-0);
+}
+
+
+
