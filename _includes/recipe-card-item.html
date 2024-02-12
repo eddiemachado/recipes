@@ -1,13 +1,15 @@
-<div class="recipe-item-card">
+<div class="recipe-item recipe-item-card">
   <a class="post-link" href="{{ post.url | relative_url }}">
 
 
       <!-- post thumb -->
-      <img class="post-thumb-img" src="{{ site.baseurl }}/assets/images/{{ post.thumbnail }}.png" alt="" />
+      <div class="post-thumb-container">
+        <img class="post-thumb-img" src="{{ site.baseurl }}/assets/images/{{ post.thumbnail }}.png" alt="" />
+      </div>
       <div class="recipe-card-overlay"></div>
 
       <!-- tags -->
-      <div class="recipe-card-tags">
+      <div class="recipe-item-info">
         {% for tag in post.tags %}
           <span data-tooltip="{{ tag | capitalize }}" class="recipe-icon icon-{{ tag }}">
             {% include {{ tag | prepend: 'icons/' | append: '.html' }} %}
@@ -16,11 +18,9 @@
       </div>
 
       <!-- post info -->
-      <div class="recipe-item-info">
-        <div class="recipe-card-meta">
-          <h3 class="recipe-item-title">{{ post.title | escape }}</h3>
-          <p class="recipe-item-desc">{{ post.description | escape }}</p>
-        </div>
+      <div class="recipe-card-meta">
+        <h3 class="recipe-item-title">{{ post.title | escape }}</h3>
+        <p class="recipe-item-desc">{{ post.description | escape }}</p>
       </div>
   </a>
 </div>

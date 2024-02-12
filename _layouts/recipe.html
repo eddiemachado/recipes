@@ -16,6 +16,7 @@ layout: base
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-intro-desc">{{ page.description | escape }}</p>
 
+    {% if page.preptime != nil %}
     <div class="recipe-meta">
       <div class="prep-time">
         <label>Prep time</label>
@@ -32,6 +33,7 @@ layout: base
         <span>{{ page.servings }}</span>
       </div>
     </div>
+    {% endif %}
 
 
   </header>
@@ -42,8 +44,13 @@ layout: base
   
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+    <main>
+      {{ content }}
+    </main>
+      
+      
   </div>
+  
 
   <h4>Keywords</h4>
   {% for item in page.keywords %}

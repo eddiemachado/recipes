@@ -2,7 +2,7 @@
 
     <input type="search" class="input input-search" placeholder="Type to filter..." />
 
-    <select name="sort" class="select" id="category">
+    <select name="sort" class="input input-select" id="category">
         {% assign categories = site.categories | sort %}
             {% for category in categories %}
             {% assign cat = category | first %}
