@@ -376,7 +376,7 @@ the titles and description of recipes on recipe page
 }
 
 .recipe-ingredients {
-    margin: var(--spacing-24) var(--spacing-0);
+    margin: var(--spacing-24) var(--spacing-0) var(--spacing-72);
 }
 
 .recipe-ingredients h2 {
@@ -392,7 +392,35 @@ the titles and description of recipes on recipe page
     margin: var(--spacing-0) var(--spacing-0) var(--spacing-8);
 }
 
+.ingredient-list li ul {
+    margin: var(--spacing-4) var(--spacing-0) var(--spacing-8) var(--spacing-32);
+}
+
+.ingredient-list li ul li {
+    position: relative;
+    margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+    list-style: none;
+}
+
+.ingredient-list li ul li::before {
+    position: absolute;
+    content: attr(data-icon);
+    /* Make slightly larger than the li font-size
+    but smaller than the li gap */
+    font-size: 0.65rem;
+    left: -20px;
+    top: 5px;
+  }
+
 .section-byline {
     margin-bottom: var(--spacing-4);
 }
 
+
+.post-content h3 {
+    margin: var(--spacing-24) var(--spacing-0) var(--spacing-16);
+}
+
+.post-content #prep-work + ol {
+    margin-bottom: var(--spacing-56);
+}

@@ -8,19 +8,43 @@ vegetarian: true
 ingredients:
   - 2 Tbsp Olive Oil
   - 2 lbs Lean Ground beef
-  - 🧅 1 large yellow onion (diced)
-  - 🧄 3 cloves minced garlic
   - 1 cup low sodium beef broth
   - 2 14.5 oz cans diced Tomatoes with juice
   - 2 15oz cans tomato sauce
   - 2 tsp low sodium soy sauce
-  - 🧂 2 tsp salt
-  - 1 tsp black pepper
   - 🫑 1 green bell pepper
 preptime: 20min
 cooktime: 20min
 servings: 6
 ---
+
+
+
+
+
+___
+
+<div class="recipe-ingredients">
+
+<h2>Ingredients</h2>
+
+<ul class="ingredient-list">
+    <li>300g of [Sofrito]()
+      <ul>
+    <li data-icon="⮑">1 Green bell pepper</li>
+    <li data-icon="⮑">3 cloves minced garlic</li>
+    <li data-icon="⮑">1 large yellow onion</li>
+      </ul>
+    </li>
+    <li>2 teaspoons of salt</li>
+    <li>1 teaspoon of black pepper</li>
+</ul>
+
+</div>
+
+___
+
+
 
 
   - Heat soup pot on medium-high heat. Once hot, add oil, then ground beef.

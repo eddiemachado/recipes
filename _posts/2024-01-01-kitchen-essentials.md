@@ -53,9 +53,9 @@ Things are going to splatter and you don't wanna get stains. If not, you'll need
 
 
 ## Molcajete
-Definitely a luxury, a good molcajete is perfect for grinding spices or even creating salsas and guacamole. Make sure you get one made of volcanic stone and look for imperfections. Anything with chips or uneven edges means it's legit. Don't forget to cure it before use [^two].
+Definitely a luxury, a good molcajete is perfect for grinding spices or even creating salsas and guacamole. Make sure you get one made of volcanic stone and look for imperfections. Anything with chips or uneven edges means it's legit. Don't forget to cure it before use[^one].
 
 [Masienda](https://masienda.com/collections/all/products/molcajete)
 
 
-[^two]: [https://www.youtube.com/watch?v=WYe9LhXt9aY](https://www.youtube.com/watch?v=WYe9LhXt9aY)
+[^one]: [https://www.youtube.com/watch?v=WYe9LhXt9aY](https://www.youtube.com/watch?v=WYe9LhXt9aY)
