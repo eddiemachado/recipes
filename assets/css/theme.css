@@ -249,19 +249,22 @@ Thumbnail
     position: absolute;
     left: var(--spacing-0);
     top: var(--spacing-0);
+    width: 100%;
 }
 
 /* List */
 .recipe-item-list .post-thumb-container {
     position: relative;
-    width: var(--spacing-72);
-    height: var(--spacing-72);
+    width: var(--spacing-64);
+    height: var(--spacing-64);
     margin-right: var(--spacing-16);
 }
 
 
 .post-thumb-img {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 /* Card */
@@ -332,6 +335,7 @@ These styles only apply to the card layouts
 
 .post-intro-desc {
     color: var(--color-text-light);
+    font-size: var(--font-size-large);
 }
 
 
@@ -372,7 +376,7 @@ the titles and description of recipes on recipe page
 }
 
 .recipe-ingredients {
-    margin: var(--spacing-64) var(--spacing-0);
+    margin: var(--spacing-24) var(--spacing-0);
 }
 
 .recipe-ingredients h2 {
@@ -388,5 +392,7 @@ the titles and description of recipes on recipe page
     margin: var(--spacing-0) var(--spacing-0) var(--spacing-8);
 }
 
-
+.section-byline {
+    margin-bottom: var(--spacing-4);
+}
 

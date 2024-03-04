@@ -10,20 +10,16 @@ layout: base
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <div class="breadcrumbs">
+      <a href="/" class="">Home</a>
+    </div>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-intro-desc">{{ page.description | escape }}</p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-
-  <h4>Keywords</h4>
-  {% for item in post.keywords %}
-        <a class="keyword" href="#" data-tooltip="{{ item | capitalize }}">
-          {{ item | prepend: '#' }}
-        </a>
-      {% endfor %}
-
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
