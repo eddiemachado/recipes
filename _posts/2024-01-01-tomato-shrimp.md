@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: Gaza shrimp stew
+title: Tomato shrimp stew
 description: A tomato based shrimp stew with a kick
 category: dinner
 tags: shrimp tomato garlic

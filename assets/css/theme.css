@@ -300,6 +300,11 @@ Thumbnail
     width: 100%;
     top: -16px;
 }
+@media (max-width:599px) { 
+    .recipe-item-list .post-thumb-img {
+        top: -80%;
+    }
+}
 
 
 
