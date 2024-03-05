@@ -1,10 +1,13 @@
 ---
-layout: post
+layout: recipe
 title: Honey Banana bread
 description: A low sugar alternative to normal banana bread
 category: snacks
 tags: banana bread honey
 thumbnail: honey-banana-bread
+preptime: 15 min
+cooktime: 60 min
+servings: 4
 ---
 
 
@@ -39,17 +42,17 @@ ___
 ### Prep work
 1. Preheat the oven to **250°F (175°C)**
 2. Take a tin or small pan and rub it well with butter. This prevents the sides from sticking so it will pop out easier
+3. In a bowl, combine the **flour**, **baking soda**, and **salt** and mix. It's important to mix these before to make sure there are no dry or salty chunks in the finished bread.
 
 ### Preparation
 
 1. Mix the **butter** and **honey** in a mixer or bowl until it's well mixed
 2. Add the **eggs** one by one and mix well
 3. Add the **bananas** in one at a time and mix well
-4. In a seperate bowl, combine the **flour**, **baking soda**, and **salt** and mix. It's important to mix these in a seperate bowl to make sure there are no dry or salty chunks in the finished bread.
-5. You want to do this next bit by hand. Pour the **dry ingredients** into the other bowl with the mixture. Fold it slowly and not too hard until it's all mixed together. This keeps the bread fluffy and airy.
-6. Pour the mixture into your previously greased pan and put it into the oven at **250°F (175°C)**
-7. Cook for about **50 - 55 minutes**, then stick a toothpick into the center. If it comes out totally clean, then it's ready. You can take it out of the oven.
-8. Let it cool for in the pan for 10 minutes then take it out and let it cool for a bit longer before cutting into it.
+4. You want to do this next bit by hand. Pour the **dry ingredients** into the your bowl with the mixture. Fold it slowly and not too hard until it's all mixed together. This keeps the bread fluffy and airy.
+5. Pour the mixture into your previously greased pan and put it into the oven at **250°F (175°C)**
+6. Cook for about **50 - 55 minutes**, then stick a toothpick into the center. If it comes out totally clean, then it's ready. You can take it out of the oven.
+7. Let it cool for in the pan for 10 minutes then take it out and let it cool for a bit longer before cutting into it.
 
 
 

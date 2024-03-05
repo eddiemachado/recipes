@@ -164,7 +164,8 @@ p {
 
 h1, .h1 {
     font-size: 3.6rem;
-    margin: var(--spacing-0);
+    line-height: 1.24;
+    margin: var(--spacing-0) var(--spacing-0) var(--spacing-8);
 }
 
 h2, .h2 {
@@ -550,30 +551,27 @@ figcaption {
 
 .callout {
     position: relative;
-    padding: var(--spacing-24) var(--spacing-24) var(--spacing-24) var(--spacing-48);
+    padding: var(--spacing-16) var(--spacing-24);
     background-color: var(--color-blue-100);
     border: 1px solid var(--color-blue-300);
-    margin: var(--spacing-24) var(--spacing-0);
+    margin: var(--spacing-40) var(--spacing-0);
     border-radius: var(--radius-8);
 }
 
 .callout::after {
+    content: '';
+    background-image: url(../images/callout.png);
+    background-repeat: no-repeat;
+    width: var(--spacing-40);
+    height: var(--spacing-40);
     position: absolute;
-    top: var(--spacing-24);
-    left: var(--spacing-24);
+    top: -20px;
+    left: -20px;
+    background-size: 92%;
+    transform: rotate(-8deg);
 }
 
-.callout-onion::after {
-    content: '🧅';
-}
 
-.callout-knife::after {
-    content: '🔪';
-}
-
-.callout-honey::after {
-    content: '🍯';
-}
 
 
 

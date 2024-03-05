@@ -212,16 +212,19 @@ The emojis displayed within the cards
 }
 
 .recipe-icon {
-    width: var(--spacing-32);
-    height: var(--spacing-32);
+    width: var(--spacing-24);
+    height: var(--spacing-24);
     font-size: 20px;
     line-height: var(--spacing-32);
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    background-color: var(--color-neutral-1000);
-    border-radius: var(--radius-rounded);
     margin-left: var(--spacing-8);
+}
+
+.recipe-icon svg {
+    width: var(--spacing-24);
+    height: var(--spacing-24);
 }
 
 .recipe-icon:hover {
@@ -229,9 +232,7 @@ The emojis displayed within the cards
 }
 
 /* List */
-.recipe-item-list .recipe-icon {
-    background-color: var(--color-neutral-200); 
-}
+
 
 /**
 Thumbnail
