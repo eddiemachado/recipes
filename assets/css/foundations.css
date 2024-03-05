@@ -538,6 +538,7 @@ figcaption {
 
 .breadcrumbs {
     font-size: var(--font-size-small);
+    margin: var(--spacing-0) var(--spacing-0) var(--spacing-16);
 }
 
 .breadcrumbs a {
