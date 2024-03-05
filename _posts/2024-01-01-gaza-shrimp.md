@@ -4,8 +4,8 @@ title: Gaza shrimp stew
 description: A tomato based shrimp stew with a kick
 category: dinner
 tags: shrimp tomato garlic
-preptime: 10 min
-cooktime: 60 min
+preptime: 15 min
+cooktime: 30 min
 servings: 4
 ---
 
