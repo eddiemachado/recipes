@@ -1,9 +1,9 @@
 ---
 layout: recipe
-title: Honey Banana bread
+title: Honey banana bread
 description: A low sugar alternative to normal banana bread
 category: snacks
-tags: banana bread honey
+tags: banana honey
 thumbnail: honey-banana-bread
 preptime: 15 min
 cooktime: 60 min

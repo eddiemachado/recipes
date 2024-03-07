@@ -3,7 +3,6 @@ layout: post
 title: The Holy Trinity
 description: The foundation to every recipe
 category: basics
-tags: garlic onion pepper
 thumbnail: sofrito
 ---
 

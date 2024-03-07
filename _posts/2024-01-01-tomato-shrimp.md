@@ -52,7 +52,7 @@ ___
 
 1. Over medium heat with **olive oil**, fry the **onions** for about 10 minutes
 2. Add the chopped **tomatoes** along with the **sugar**, the **dry spice mix** you prepped, along with **200ml (3/4 cup) of your just boiled water**
-3. While that cooks for a bit, small the **garlic**, **dill**, **1/2 teaspoon of salt**, and **green chilis** in your food processor until it's well blended. Put that mix in with the cooking tomatoes 
+3. While that cooks for a bit, mix the **garlic**, **dill**, **1/2 teaspoon of salt**, and **green chilis** in your food processor until it's well blended. Put that mix in with the cooking tomatoes 
 4. Cover and **cook on low for about 20 minutes**
 5. After 20 minutes, uncover and toss your cleaned **shrimp** in. Make sure they get submerged in the tomatoes so that they cook evenly. Cook them for about 2-4 minutes or until they turn pink.
 6. Turn off the heat and drizzle some **olive oil** and your chopped **parsley** on top and serve.

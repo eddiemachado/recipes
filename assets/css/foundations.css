@@ -244,7 +244,9 @@ hr {
     margin: var(--spacing-24) var(--spacing-0);
 }
 
-
+.is-hidden {
+    display: none !important;
+}
 
 
 /*! layout & grid */
@@ -436,9 +438,12 @@ label {
     font-size: var(--font-size-small);
     line-height: 1;
     background-color: var(--color-neutral-200);
-    border: 1px solid var(--color-border-default);
+    border: 1px solid transparent;
     border-radius: var(--radius-8);
     transition: var(--motion-speed-01) var(--motion-in);
+    width: 100%;
+    max-width: 320px;
+    position: relative;
 }
 
 .input:hover {
@@ -450,12 +455,14 @@ label {
 }
 
 .input-search {
-    background-image: url(../../_includes/icons/search.svg);
+    background: var(--color-neutral-200) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 16px;
+    padding-left: var(--spacing-40);
 }
 
 /*
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 64 64" width="24px" height="24px"><path d="M 27 9 C 17.075 9 9 17.075 9 27 C 9 36.925 17.075 45 27 45 C 31.129213 45 34.9263 43.587367 37.966797 41.240234 L 51.048828 54.322266 C 51.952828 55.226266 53.418266 55.226266 54.322266 54.322266 C 55.226266 53.418266 55.226266 51.952828 54.322266 51.048828 L 41.240234 37.966797 C 43.587367 34.9263 45 31.129213 45 27 C 45 17.075 36.925 9 27 9 z M 27 13 C 34.719 13 41 19.281 41 27 C 41 34.719 34.719 41 27 41 C 19.281 41 13 34.719 13 27 C 13 19.281 19.281 13 27 13 z"/></svg>
 */
+
 
 .input-select {
     outline: none;
@@ -532,6 +539,7 @@ figcaption {
 .filters {
     display: flex;
     justify-content:space-between;
+    justify-content: center;
     margin: var(--spacing-16) var(--spacing-0);
 }
 
@@ -543,6 +551,12 @@ figcaption {
 
 .breadcrumbs a {
     color: var(--color-text-light);
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
 }
 
 .breadcrumbs span {
@@ -604,6 +618,16 @@ figcaption {
     font-size: var(--font-size-small);
 }
 
+.footnotes ol::before {
+    content: 'References';
+    display: block;
+    color: var(--color-text-default);
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-12);
+
+}
+
 .footnotes li {
     margin-bottom: var(--spacing-8);
 }
@@ -612,9 +636,31 @@ figcaption {
     margin: var(--spacing-0);
 }
 
+.footnotes a {
+    color: var(--color-text-light);
+}
+
+.footnotes a:hover {
+    color: var(--color-link-hover);
+}
+
+.footnotes a.reversefootnote {
+    font-size: var(--font-size-tiny);
+    text-decoration: none;
+    color: var(--color-text-disabled);
+}
+
+.footnotes a.reversefootnote:hover {
+    color: var(--font-size-default);
+    text-decoration: none;
+}
+
 /*! footer */
 #footer {
-    margin-top: var(--spacing-96);
+    margin: var(--spacing-96) var(--spacing-0) var(--spacing-40);
+    text-align: center;
+    font-size: var(--font-size-small);
+    color: var(--color-text-disabled);
 }
 
 

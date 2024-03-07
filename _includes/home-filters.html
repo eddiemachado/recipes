@@ -1,7 +1,8 @@
 <div class="filters home-filters">
 
-    <input type="search" class="input input-search" placeholder="Type to filter..." />
+    <input type="search" id="searchbox" oninput="liveSearch()"  class="input input-search" placeholder="Type to filter..." />
 
+    <!--
     <select name="sort" class="input input-select" id="category">
         {% assign categories = site.categories | sort %}
             {% for category in categories %}
@@ -9,5 +10,6 @@
             <option value="{{ cat }}">{{ cat | capitalize }}</option>
         {% endfor %}
     </select>
+    -->
 
 </div>
