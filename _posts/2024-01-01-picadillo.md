@@ -56,3 +56,22 @@ ___
   - Reduce heat to low, cover and cook for 15 minutes, stirring occasionally.
   - Stir in uncooked macaroni noodles, cover and cook for an additional 15-25 minutes, or until pasta is cooked.
   - Serve and Enjoy!
+
+
+
+
+
+
+Classic
+
+with Potatoes
+
+with Raisins
+
+with Tomato sauce
+
+If you want to do red picadillo, you can add [some simple things](https://www.desumama.com/cuban-recipes-familys-cuban-sofrito/) to the Sofrito and create the base:
+- Sofrito
+- Roma Tomatoes
+- Cumin powder
+- Oregano

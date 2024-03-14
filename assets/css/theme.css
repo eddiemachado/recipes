@@ -290,6 +290,9 @@ Thumbnail
 
 
 
+
+
+
 /**
 List specific
 These styles only apply to the list layouts
@@ -449,3 +452,40 @@ the titles and description of recipes on recipe page
 .post-content #prep-work + ol {
     margin-bottom: var(--spacing-56);
 }
+
+
+/** images in posts **/
+.image-container {
+    margin: var(--spacing-56) var(--spacing-24);
+    text-align: center;
+}
+
+.image-container img {
+    border-radius: var(--radius-8);
+}
+
+.image-container em {
+    display: block;
+    margin-top: var(--spacing-4);
+    font-size: var(--font-size-small);
+    color: var(--color-text-light);
+}
+
+
+
+summary {
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+  }
+
+  details {
+    border: 3px solid blue;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  details[open] summary {
+    background-color: brown;
+  }

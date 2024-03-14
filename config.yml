@@ -6,3 +6,9 @@ collections:
     output: true
     permalink: /:collection/:name/
     layout: "recipe"
+
+gems:
+  - jekyll-figure
+
+jekyll-figure:
+  paragraphs: false

@@ -655,6 +655,11 @@ figcaption {
     text-decoration: none;
 }
 
+.footnote {
+    padding: var(--spacing-0) 2px var(--spacing-0) var(--spacing-4);
+    text-decoration: none;
+}
+
 /*! footer */
 #footer {
     margin: var(--spacing-96) var(--spacing-0) var(--spacing-40);
