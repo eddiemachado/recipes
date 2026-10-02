@@ -1,0 +1,14 @@
+
+image_path: /assets/images/
+
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:name/
+    layout: "recipe"
+
+gems:
+  - jekyll-figure
+
+jekyll-figure:
+  paragraphs: false
